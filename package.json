@@ -1,0 +1,16 @@
+{
+  "name": "pisco-gitflow-flows",
+  "version": "0.1.0",
+  "description": "GitFlow Flows for piscosour",
+  "keywords": [
+    "piscosour-recipe"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "piscosour": "^1.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
