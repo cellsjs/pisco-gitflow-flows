@@ -1,0 +1,9 @@
+{
+  "name": "static-analysis",
+  "description": "Static Analysis of Source Code",
+  "steps": {
+    "lint": {
+      "implementation-check" : false
+    }
+  }
+}

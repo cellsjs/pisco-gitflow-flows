@@ -1,0 +1,12 @@
+{
+  "name": "acceptance-tests",
+  "description": "User Acceptance Tests",
+  "steps": {
+    "require-acceptance": {
+      "implementation-check" : false
+    },
+    "check-acceptance": {
+      "implementation-check" : false
+    }
+  }
+}

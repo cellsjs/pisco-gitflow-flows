@@ -1,0 +1,12 @@
+{
+  "name": "structural-tests",
+  "description": "Structural test: check proper formation",
+  "steps": {
+    "demo-tests": {
+      "implementation-check" : false
+    },
+    "check-structure": {
+      "implementation-check" : false
+    }
+  }
+}

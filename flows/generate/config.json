@@ -1,0 +1,34 @@
+{
+  "name": "generate",
+  "description": "Complete CI flow",
+  "steps": {
+    "install": {
+      "excludes" : ["feature", "hotfix", "release", "merger", "consolidation"],
+      "type" : "flow"
+    },
+    "build": {
+      "excludes" : ["feature", "hotfix", "release", "merger", "consolidation"],
+      "type" : "flow"
+    },
+    "validate": {
+      "excludes" : ["feature", "hotfix", "release", "merger", "consolidation"],
+      "type" : "flow"
+    },
+    "package": {
+      "excludes" : ["feature", "hotfix", "release", "merger", "consolidation"],
+      "type" : "flow"
+    },
+    "publish": {
+      "excludes" : ["feature", "hotfix", "release", "merger", "consolidation"],
+      "type" : "flow"
+    },
+    "deploy": {
+      "excludes" : ["feature", "hotfix", "release", "merger", "consolidation"],
+      "type" : "flow"
+    },
+    "integrated-validate": {
+      "excludes" : ["feature", "hotfix", "release", "merger", "consolidation"],
+      "type" : "flow"
+    }
+  }
+}

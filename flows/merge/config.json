@@ -5,8 +5,7 @@
     "merge": {
       "implementation-check" : false
     },
-    "validate" : {
-      "excludes" : ["feature", "hotfix", "release"],
+    "generate" : {
       "type" : "flow"
     }
   }

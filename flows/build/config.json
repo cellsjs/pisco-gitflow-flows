@@ -1,0 +1,9 @@
+{
+  "name": "build",
+  "description": "Build Software",
+  "steps": {
+    "build": {
+      "implementation-check" : false
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "deploy",
+  "description": "Deploy artifact",
+  "steps": {
+    "deploy": {
+      "implementation-check" : false
+    }
+  }
+}

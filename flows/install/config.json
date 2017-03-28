@@ -1,0 +1,18 @@
+{
+  "name": "install",
+  "description": "Install and provide all dependencies and requirements",
+  "steps": {
+    "provide": {
+      "implementation-check" : false
+    },
+    "configure": {
+      "implementation-check" : false
+    },
+    "resolve": {
+      "implementation-check" : false
+    },
+    "check-install": {
+      "implementation-check" : false
+    }
+  }
+}

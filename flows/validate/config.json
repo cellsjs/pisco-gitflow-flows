@@ -1,0 +1,15 @@
+{
+  "name": "validate",
+  "description": "Unit validate: Do not need deploy",
+  "steps": {
+    "unit-test": {
+      "implementation-check" : false
+    },
+    "static-analysis": {
+      "type" : "flow"
+    },
+    "structural-tests": {
+      "type" : "flow"
+    }
+  }
+}

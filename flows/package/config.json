@@ -1,0 +1,9 @@
+{
+  "name": "package",
+  "description": "Create a package for distribution: artifact",
+  "steps": {
+    "package": {
+      "implementation-check" : false
+    }
+  }
+}

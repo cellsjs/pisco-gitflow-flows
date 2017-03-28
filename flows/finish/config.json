@@ -11,8 +11,7 @@
     "finish": {
       "implementation-check" : false
     },
-    "validate" : {
-      "excludes" : ["feature", "hotfix", "release", "merger", "consolidation"],
+    "generate" : {
       "type" : "flow"
     },
     "publish": {

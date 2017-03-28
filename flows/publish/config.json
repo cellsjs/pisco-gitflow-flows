@@ -1,0 +1,9 @@
+{
+  "name": "publish",
+  "description": "Publish generated artifact",
+  "steps": {
+    "publish": {
+      "implementation-check" : false
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "integrated-validate",
+  "description": "Integrated validate: Needs deploy",
+  "steps": {
+    "smoke-tests": {
+      "implementation-check" : false
+    },
+    "functional-tests": {
+      "implementation-check" : false
+    },
+    "performance-tests": {
+      "implementation-check" : false
+    },
+    "security-tests": {
+      "implementation-check" : false
+    },
+    "usability-tests": {
+      "implementation-check" : false
+    },
+    "acceptance-tests": {
+      "type" : "flow"
+    }
+  }
+}
