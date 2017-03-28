@@ -2,19 +2,19 @@
   "name": "integrated-validate",
   "description": "Integrated validate: Needs deploy",
   "steps": {
-    "smoke-tests": {
+    "smoke-testing": {
       "implementation-check" : false
     },
-    "functional-tests": {
+    "functional-testing": {
       "implementation-check" : false
     },
-    "performance-tests": {
+    "performance-testing": {
       "implementation-check" : false
     },
-    "security-tests": {
+    "security-testing": {
       "implementation-check" : false
     },
-    "usability-tests": {
+    "usability-testing": {
       "implementation-check" : false
     },
     "acceptance-tests": {
