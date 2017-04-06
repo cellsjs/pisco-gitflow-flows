@@ -1,5 +1,5 @@
 {
-  "name": "integrated-validate",
+  "name": "test",
   "description": "Integrated validate: Needs deploy",
   "steps": {
     "smoke-testing": {
