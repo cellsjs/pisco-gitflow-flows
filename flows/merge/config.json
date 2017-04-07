@@ -5,7 +5,7 @@
     "merge": {
       "implementation-check" : false
     },
-    "generate" : {
+    "validate" : {
       "type" : "flow"
     }
   }

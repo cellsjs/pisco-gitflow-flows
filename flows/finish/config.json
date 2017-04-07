@@ -11,7 +11,7 @@
     "finish": {
       "implementation-check" : false
     },
-    "generate" : {
+    "validate" : {
       "type" : "flow"
     },
     "publish": {
@@ -22,6 +22,9 @@
       "inputs" : {
         "deletedBranch" : {"finish": "deletedBranch"}
       }
+    },
+    "deploy": {
+      "type" : "flow"
     }
   }
 }
