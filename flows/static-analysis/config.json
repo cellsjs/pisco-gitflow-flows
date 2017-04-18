@@ -1,6 +1,7 @@
 {
   "name": "static-analysis",
   "description": "Static Analysis of Source Code",
+  "excludes" : ["develop", "master", "feature", "hotfix", "release", "merger", "consolidation"],
   "steps": {
     "lint": {
       "implementation-check" : false

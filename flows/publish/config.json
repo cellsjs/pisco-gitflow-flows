@@ -1,9 +1,8 @@
 {
   "name": "publish",
   "description": "Publish generated artifact",
+  "excludes" : ["develop", "master", "feature", "hotfix", "release", "merger", "consolidation"],
   "steps": {
-    "publish": {
-      "implementation-check" : false
-    }
+    "publish": {}
   }
 }

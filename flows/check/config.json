@@ -1,6 +1,7 @@
 {
   "name": "check",
   "description": "Static Check: Do not need deploy",
+  "excludes" : ["develop", "master", "feature", "hotfix", "release", "merger", "consolidation"],
   "steps": {
     "unit-testing": {
       "implementation-check" : false

@@ -1,9 +1,8 @@
 {
   "name": "build",
   "description": "Build Software",
+  "excludes" : ["develop", "master", "feature", "hotfix", "release", "merger", "consolidation"],
   "steps": {
-    "build": {
-      "implementation-check" : false
-    }
+    "build": {}
   }
 }

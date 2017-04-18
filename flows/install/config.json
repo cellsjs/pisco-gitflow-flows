@@ -1,6 +1,7 @@
 {
   "name": "install",
   "description": "Install and provide all dependencies and requirements",
+  "excludes" : ["develop", "master", "feature", "hotfix", "release", "merger", "consolidation"],
   "steps": {
     "provide": {
       "implementation-check" : false
@@ -8,9 +9,7 @@
     "configure": {
       "implementation-check" : false
     },
-    "resolve": {
-      "implementation-check" : false
-    },
+    "resolve": {},
     "check-install": {
       "implementation-check" : false
     }

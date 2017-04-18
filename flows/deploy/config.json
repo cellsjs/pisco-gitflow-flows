@@ -1,6 +1,7 @@
 {
   "name": "deploy",
   "description": "Deploy artifact",
+  "excludes" : ["develop", "master", "feature", "hotfix", "release", "merger", "consolidation"],
   "steps": {
     "deploy": {
       "implementation-check" : false

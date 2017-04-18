@@ -1,9 +1,8 @@
 {
   "name": "package",
   "description": "Create a package for distribution: artifact",
+  "excludes" : ["develop", "master", "feature", "hotfix", "release", "merger", "consolidation"],
   "steps": {
-    "package": {
-      "implementation-check" : false
-    }
+    "package": {}
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "validate",
   "description": "Validate CI flow",
-  "excludes" : ["feature", "hotfix", "release", "merger", "consolidation"],
+  "excludes" : ["develop", "master", "feature", "hotfix", "release", "merger", "consolidation"],
   "steps": {
     "install": { "type" : "flow" },
     "build": { "type" : "flow" },
