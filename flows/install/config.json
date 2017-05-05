@@ -3,13 +3,13 @@
   "description": "Install and provide all dependencies and requirements",
   "excludes" : ["develop", "master", "feature", "hotfix", "release", "merger", "consolidation"],
   "steps": {
-    "provide": {
+    "provide-env": {
       "implementation-check" : false
     },
-    "configure": {
+    "configure-env": {
       "implementation-check" : false
     },
-    "resolve": {},
+    "resolve-deps": {},
     "check-install": {
       "implementation-check" : false
     }
