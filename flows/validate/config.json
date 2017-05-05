@@ -1,14 +1,31 @@
 {
   "name": "validate",
   "description": "Validate CI flow",
-  "excludes" : ["develop", "master", "feature", "hotfix", "release", "merger", "consolidation"],
+  "excludes": ["develop", "master", "feature", "hotfix", "release", "merger", "consolidation"],
   "steps": {
-    "install": { "type" : "flow" },
-    "build": { "type" : "flow" },
-    "check": { "type" : "flow" },
-    "package": { "type" : "flow" },
-    "publish": { "type" : "flow" },
-    "deploy": { "type" : "flow" },
-    "test": { "type" : "flow" }
+    "install": {
+      "type": "flow"
+    },
+    "build": {
+      "type": "flow"
+    },
+    "check": {
+      "type": "flow"
+    },
+    "package": {
+      "type": "flow"
+    },
+    "publish": {
+      "type": "flow"
+    },
+    "deploy": {
+      "type": "flow"
+    },
+    "test": {
+      "type": "flow",
+      "inputs" : {
+        "artifacts" : {"deploy": "artifacts"}
+      }
+    }
   }
 }
