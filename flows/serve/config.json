@@ -1,0 +1,19 @@
+{
+  "name": "serve",
+  "description": "Serve a context locally",
+  "excludes": ["develop", "master", "feature", "hotfix", "release", "merger", "consolidation"],
+  "steps": {
+    "install": {
+      "type": "flow"
+    },
+    "build": {
+      "type": "flow"
+    },
+    "package": {
+      "type": "flow"
+    },
+    "launch": {
+      "type": "flow"
+    }
+  }
+}

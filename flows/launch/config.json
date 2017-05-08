@@ -1,0 +1,8 @@
+{
+  "name": "launch",
+  "description": "Launch context locally",
+  "excludes" : ["develop", "master", "feature", "hotfix", "release", "merger", "consolidation"],
+  "steps": {
+    "launch": {}
+  }
+}
