@@ -3,7 +3,7 @@
   "description": "Validate CI flow",
   "excludes": ["develop", "master", "feature", "hotfix", "release", "merger", "consolidation"],
   "steps": {
-    "install": {
+    "provide": {
       "type": "flow"
     },
     "build": {
