@@ -22,10 +22,7 @@
       "type": "flow"
     },
     "test": {
-      "type": "flow",
-      "inputs" : {
-        "artifacts" : {"deploy": "artifacts"}
-      }
+      "type": "flow"
     }
   }
 }
