@@ -3,6 +3,7 @@
   "description": "Build Software",
   "excludes" : ["develop", "master", "feature", "hotfix", "release", "merger", "consolidation"],
   "steps": {
+    "resolve-deps": {},
     "build": {}
   }
 }
