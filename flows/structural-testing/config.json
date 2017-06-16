@@ -1,12 +1,9 @@
 {
-  "name": "structural-tests",
+  "name": "structural-testing",
   "description": "Structural test: check proper formation",
   "excludes" : ["develop", "master", "feature", "hotfix", "release", "merger", "consolidation"],
   "steps": {
-    "demo-tests": {
-      "implementation-check" : false
-    },
-    "check-structure": {
+    "structural-testing": {
       "implementation-check" : false
     }
   }
