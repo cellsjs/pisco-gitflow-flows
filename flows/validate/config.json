@@ -1,6 +1,6 @@
 {
   "name": "validate",
-  "description": "Validate CI flow",
+  "description": "Standard validation pipeline",
   "excludes": ["develop", "master", "feature", "hotfix", "release", "merger", "consolidation"],
   "steps": {
     "provide": {
