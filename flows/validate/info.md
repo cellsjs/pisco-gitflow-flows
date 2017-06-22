@@ -121,6 +121,8 @@ The validate flow will publish (as configured) the artifacts generated in the pr
       "publish": {}
     }
     ```
+    
+    We can configure to publish a node library in [npmjs][2], or in [artifactory][3], or a maven library in a [Nexus][4] repository, etc...
 
 
 #### Flow deploy
@@ -135,9 +137,11 @@ The particular environment will be calculated in function of several parameters:
 
 #### Flow test
 
-In this step of the flow we hace to test the behaviour of the software unit once it has been deployed in the specific environment.
+In this step of the flow we have to test the behaviour of the software unit once it has been deployed in the specific environment.
+In order to do so, this step has an input from the deploy step so the tests
+are executed against the correct platform and artifact.
 
-We have several types of test in this stage, and we have defined it as steps of this flow:
+We have several types of tests in this stage, and we have defined them as steps of this flow:
 
 * Steps:
     ```json
@@ -165,3 +169,6 @@ We have several types of test in this stage, and we have defined it as steps of 
 
 
 [1]: ./config.json
+[2]: https://www.npmjs.com/
+[3]: https://www.jfrog.com/open-source/
+[4]: https://www.sonatype.com/nexus-repository-sonatype
