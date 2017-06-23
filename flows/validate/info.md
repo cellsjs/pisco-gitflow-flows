@@ -140,7 +140,7 @@ The validate flow will publish (as configured) the artifacts generated in the pr
     }
     ```
     
-    We can configure to publish a node library in [npmjs][2], or in [artifactory][3], or a maven library in a [Nexus][4] repository, etc...
+    We can configure to publish a node library in [npmjs][9], or in [artifactory][10], or a maven library in a [Nexus][11] repository, etc...
 
 
 #### Flow [deploy][f]
