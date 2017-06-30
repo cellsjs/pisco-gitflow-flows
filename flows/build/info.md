@@ -21,8 +21,8 @@ compilation-time errors.
 }
 ```
     
-* `resolve-deps`: Resolve all the dependencies in compilation time defined. Check for the bower.json dependencies, or the maven dependecies, or the package.json dependencies.
-* `build`: Execute the build process with the tool configured for the software unit.
+* `resolve-deps`: Resolve all the dependencies in compilation time defined. Check for the bower.json dependencies, or the maven dependecies, or the package.json dependencies. Provide all dependencies necessary to build the source code of the context.
+* `build`: Compile, apply templating, prepare source code for be tested, packaged and deployed.
 
 ## <a name="excluded-contexts"></a>Excluded contexts
 
