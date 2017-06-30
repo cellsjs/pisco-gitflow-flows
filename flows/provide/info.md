@@ -26,8 +26,8 @@ These are the steps configured in the [config.json][8] file:
   }
 ```
 
-* `provide-env`: Provide the environment needed for the validate process.
-* `configure-env`: Here we configure all the tools needed in the environment.
+* `provide-env`: Execute all commands necessary to provide an environment for the entire C.I. process.
+* `configure-env`: Execute all commands necessary to configure an environment for the entire C.I. process.
 * `check-install`: Checking that all the requirements over the system have been fulfilled.
     
 As defined, those are not steps required in order to execute correctly the flow.
