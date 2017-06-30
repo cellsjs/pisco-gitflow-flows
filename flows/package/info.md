@@ -1,10 +1,25 @@
 # Flow package
 
-## Description
+1. [Description](#description)
+1. [Steps](#steps)
+1. [Excluded Contexts](#excluded-contexts)
+
+## <a name="description"></a>Description
 
 Create a package for distribution: artifact.
 
-## Excluded contexts
+## <a name="steps"></a>Steps
+
+```json
+{
+  "package": {}
+}
+```
+
+* `package`: All commands needed to generate a package artifact from the building process results and the source code of the context.
+
+
+## <a name="excluded-contexts"></a>Excluded contexts
 
 All the gitflow contexts are excluded:
 
@@ -15,14 +30,7 @@ All the gitflow contexts are excluded:
 * [release][5]
 * [merger][6]
 * [consolidation][7]
-
-## Steps
-
-```json
-{
-  "package": {}
-}
-```
+ 
  
 [1]: https://github.com/cellsjs/pisco-gitflow-contexts/blob/master/contexts/develop/index.js
 [2]: https://github.com/cellsjs/pisco-gitflow-contexts/blob/master/contexts/master/index.js
