@@ -1,6 +1,10 @@
 # Flow test
 
-## Description
+1. [Description](#description)
+1. [Steps](#steps)
+1. [Excluded Contexts](#excluded-contexts)
+
+## <a name="description"></a>Description
 
 Integrated validate: Needs deploy. Once the artifat is deployed we will test in the deployed environment its public API.
 We have defined several type of testing in this deployed environment:
@@ -12,19 +16,7 @@ We have defined several type of testing in this deployed environment:
 * `usability-testing`
 * `acceptance-tests`
 
-## Excluded contexts
-
-All the gitflow contexts are excluded:
-
-* [develop][1]
-* [master][2]
-* [feature][3]
-* [hotfix][4]
-* [release][5]
-* [merger][6]
-* [consolidation][7]
-
-## Steps
+## <a name="steps"></a>Steps
 
 ```json
 {
@@ -48,6 +40,26 @@ All the gitflow contexts are excluded:
     }
 }
 ```
+
+* `smoke-testing`: Run all smoke tests present in the source code of the contexts. This tests must be properly tagged.
+* `functional-testing`: Run all functional tests present in the source code of the contexts. This tests must be properly tagged.
+* `performance-testing`: Run all performance tests present in the source code of the contexts. This tests must be properly tagged.
+* `security-testing`:  Run all security tests present in the source code of the contexts. This tests must be properly tagged.
+* `usability-testing`: Run all usability tests present in the source code of the contexts. This tests must be properly tagged.
+* `acceptance-testing`: Run all acceptance tests present in the source code of the contexts. This tests must be properly tagged
+
+## <a name="excluded-contexts"></a>Excluded contexts
+
+All the gitflow contexts are excluded:
+
+* [develop][1]
+* [master][2]
+* [feature][3]
+* [hotfix][4]
+* [release][5]
+* [merger][6]
+* [consolidation][7]
+
 
 [1]: https://github.com/cellsjs/pisco-gitflow-contexts/blob/master/contexts/develop/index.js
 [2]: https://github.com/cellsjs/pisco-gitflow-contexts/blob/master/contexts/master/index.js
