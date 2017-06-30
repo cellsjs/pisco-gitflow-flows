@@ -61,8 +61,8 @@ Provide and install all dependencies and requirements.
       }
     ```
 
-    * `provide-env`: Provide the environment needed for the validate process.
-    * `configure-env`: Here we configure all the tools needed in the environment.
+    * `provide-env`: Execute all commands necessary to provide an environment for the entire C.I. process.
+    * `configure-env`: Execute all commands necessary to configure an environment for the entire C.I. process.
     * `check-install`: Checking that all the requirements over the system have been fulfilled.
     
     As defined, those are not steps required in order to execute correctly the flow.
@@ -83,8 +83,8 @@ compilation-time errors.
     }
     ```
     
-    * `resolve-deps`: Resolve all the dependencies in compilation time defined. Check for the bower.json dependencies, or the maven dependecies, or the package.json dependencies.
-    * `build`: Execute the build process with the tool configured for the software unit.
+    * `resolve-deps`: Resolve all the dependencies in compilation time defined. Check for the bower.json dependencies, or the maven dependecies, or the package.json dependencies. Provide all dependencies necessary to build the source code of the context.
+    * `build`: Compile, apply templating, prepare source code for be tested, packaged and deployed.
 
 #### Flow [check][c]
 
