@@ -12,10 +12,7 @@
       }
     },
     "push" : {
-      "implementation-check" : false,
-      "inputs" : {
-        "branchName" : {"start": "branchName"}
-      }
+      "implementation-check" : false
     }
   }
 }

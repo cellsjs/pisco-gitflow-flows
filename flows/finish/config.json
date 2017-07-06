@@ -5,22 +5,19 @@
     "merge": {
       "implementation-check" : false
     },
+    "validate" : {
+      "type" : "flow"
+    },
     "setVersion": {
       "excludes" : ["feature", "hotfix", "release", "merger", "consolidation"]
     },
     "finish": {
       "implementation-check" : false
     },
-    "validate" : {
-      "type" : "flow"
-    },
     "publish": {
       "type" : "flow",
       "params" : {
         "tag": true
-      },
-      "inputs" : {
-        "deletedBranch" : {"finish": "deletedBranch"}
       }
     },
     "deploy": {
