@@ -1,13 +1,30 @@
 # Flow build
 
-## Description
+1. [Description](#description)
+1. [Steps](#steps)
+1. [Excluded Contexts](#excluded-contexts)
+
+## <a name="description"></a>Description
 
 In this section we will build the software unit.
 We will resolve all the software **dependencies** of the 
 software and we will **compile** the code and detect all the 
 compilation-time errors.
 
-## Excluded contexts
+## <a name="steps"></a>Steps:
+
+
+```json
+{
+  "resolve-deps": {},
+  "build": {}
+}
+```
+    
+* `resolve-deps`: Resolve all the dependencies in compilation time defined. Check for the bower.json dependencies, or the maven dependecies, or the package.json dependencies. Provide all dependencies necessary to build the source code of the context.
+* `build`: Compile, apply templating, prepare source code for be tested, packaged and deployed.
+
+## <a name="excluded-contexts"></a>Excluded contexts
 
 All the gitflow contexts are excluded:
 
@@ -18,19 +35,6 @@ All the gitflow contexts are excluded:
 * [release][5]
 * [merger][6]
 * [consolidation][7]
-
-## Steps:
-
-
-```json
-{
-  "resolve-deps": {},
-  "build": {}
-}
-```
-    
-* `resolve-deps`: Resolve all the dependencies in compilation time defined. Check for the bower.json dependencies, or the maven dependecies, or the package.json dependencies.
-* `build`: Execute the build process with the tool configured for the software unit.
 
 
 [1]: https://github.com/cellsjs/pisco-gitflow-contexts/blob/master/contexts/develop/index.js

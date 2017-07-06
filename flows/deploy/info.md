@@ -1,6 +1,10 @@
 # Flow deploy
 
-## Description
+1. [Description](#description)
+1. [Steps](#steps)
+1. [Excluded Contexts](#excluded-contexts)
+
+## <a name="description"></a>Description
 
 Deploy the artifact. The particular environment (in which the artifact will be deployed) will be calculated in function of several parameters:
                      
@@ -8,7 +12,19 @@ Deploy the artifact. The particular environment (in which the artifact will be d
 * `configuration`: the configuration of the deploy itself.
 * `stage in the CI process`: development, preproduction, UAT, production, ...
 
-## Excluded contexts
+## <a name="steps"></a>Steps
+
+```json
+{
+  "deploy": {
+    "implementation-check" : false
+  }
+}
+```
+
+* `deploy`: All commands needed to deploy the artifact to an environment provided or configured in order to run the artifact there.
+
+## <a name="excluded-contexts"></a>Excluded contexts
 
 All the gitflow contexts are excluded:
 
@@ -19,16 +35,6 @@ All the gitflow contexts are excluded:
 * [release][5]
 * [merger][6]
 * [consolidation][7]
-
-## Steps
-
-```json
-{
-  "deploy": {
-    "implementation-check" : false
-  }
-}
-```
 
 [1]: https://github.com/cellsjs/pisco-gitflow-contexts/blob/master/contexts/develop/index.js
 [2]: https://github.com/cellsjs/pisco-gitflow-contexts/blob/master/contexts/master/index.js

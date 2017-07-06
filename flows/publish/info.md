@@ -1,10 +1,26 @@
 # Flow publish
 
-## Description
+1. [Description](#description)
+1. [Steps](#steps)
+1. [Excluded Contexts](#excluded-contexts)
+
+## <a nmae="description"></a>Description
 
 Publish generated artifact
 
-## Excluded contexts
+## <a nmae="steps"></a>Steps
+
+```json
+{
+  "publish": {}
+}
+```
+
+* `publish`: All commands needed to upload an artifact to any artifacts repository for the contexts this artifacts are going to be used by upwards dependencies.
+    
+We can configure to publish a node library in [npmjs][8], or in [artifactory][9], or a maven library in a [Nexus][10] repository, etc...
+
+## <a nmae="excluded-contexts"></a>Excluded contexts
 
 All the gitflow contexts are excluded:
 
@@ -15,16 +31,6 @@ All the gitflow contexts are excluded:
 * [release][5]
 * [merger][6]
 * [consolidation][7]
-
-## Steps
-
-```json
-{
-  "publish": {}
-}
-```
-    
-We can configure to publish a node library in [npmjs][8], or in [artifactory][9], or a maven library in a [Nexus][10] repository, etc...
 
 [1]: https://github.com/cellsjs/pisco-gitflow-contexts/blob/master/contexts/develop/index.js
 [2]: https://github.com/cellsjs/pisco-gitflow-contexts/blob/master/contexts/master/index.js

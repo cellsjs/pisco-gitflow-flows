@@ -1,22 +1,14 @@
 # Flow provide
 
-## Description
+1. [Description](#description)
+1. [Steps](#steps)
+1. [Excluded Contexts](#excluded-contexts)
+
+## <a name="description"></a>Description
 
 Provide and install all dependencies and requirements.
 
-## Excluded contexts
-
-All the gitflow contexts are excluded:
-
-* [develop][1]
-* [master][2]
-* [feature][3]
-* [hotfix][4]
-* [release][5]
-* [merger][6]
-* [consolidation][7]
-
-## Steps
+## <a name="steps"></a>Steps
 
 These are the steps configured in the [config.json][8] file:
 
@@ -34,11 +26,23 @@ These are the steps configured in the [config.json][8] file:
   }
 ```
 
-* `provide-env`: Provide the environment needed for the validate process.
-* `configure-env`: Here we configure all the tools needed in the environment.
+* `provide-env`: Execute all commands necessary to provide an environment for the entire C.I. process.
+* `configure-env`: Execute all commands necessary to configure an environment for the entire C.I. process.
 * `check-install`: Checking that all the requirements over the system have been fulfilled.
     
 As defined, those are not steps required in order to execute correctly the flow.
+
+## <a name="excluded-contexts"></a>Excluded contexts
+
+All the gitflow contexts are excluded:
+
+* [develop][1]
+* [master][2]
+* [feature][3]
+* [hotfix][4]
+* [release][5]
+* [merger][6]
+* [consolidation][7]
 
 [1]: https://github.com/cellsjs/pisco-gitflow-contexts/blob/master/contexts/develop/index.js
 [2]: https://github.com/cellsjs/pisco-gitflow-contexts/blob/master/contexts/master/index.js
